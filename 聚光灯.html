@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			html{
+				font-size: 15px;
+			}
+			body{
+				background-color: #222;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+			}
+			h1{
+				color:#333;
+				font-family: helvetica;
+				padding: 0;
+				margin: 0;
+				font-size: 8rem;
+				letter-spacing: -0.3rem;
+				position: relative;
+			}
+			h1::after{
+				content: attr(data-spotlight);
+				color: transparent;
+				position: absolute;
+				top: 0;
+				left:0;
+				clip-path: ellipse(100px 100px at 0% 50%);
+				-webkit-clip-path: ellipse(100px 100px at 0% 50%);
+				animation: spotlight 5s infinite;
+				background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1590236651329&di=539dcefa077aa9a531f7df4cdecae98c&imgtype=0&src=http%3A%2F%2Fimg.sccnn.com%2Fbimg%2F339%2F21924.jpg');
+				background-size: 150%;
+				background-position: center center;
+				background-clip: text;
+				-webkit-background-clip: text;
+			}
+			@keyframes spotlight{
+				0%{
+					-webkit-clip-path: ellipse(100px 100px at 0% 50%);
+				}
+				50%{
+					-webkit-clip-path: ellipse(100px 100px at 100% 50%);
+				}
+				100%{
+					-webkit-clip-path: ellipse(100px 100px at 0% 50%);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<h1 data-spotlight="CodingStartUp!">CodingStartUp</h1>
+	</body>
+</html>

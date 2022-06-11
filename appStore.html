@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		:root {
+			font-size: 15px;
+			font-family: helvetica;
+			--body-width: 480px;
+			--card-width: 420px;
+			--card-height: 280px;
+			--img-height: 226px;
+			--img-height-expanded: 320px;
+			background-color: #333;
+		}
+
+		body {
+			width: var(--body-width);
+			background-color: #EEE;
+			margin: auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			min-height: 100vh;
+			padding: 1rem 0;
+		}
+
+		.card {
+			height: var(--card-height);
+			width: var(--card-width);
+			background-color: #FFF;
+			border-radius: 1rem;
+			box-shadow: 0 .2rem .2rem rgba(0, 0, 0, .1);
+		}
+
+		.card img {
+			display: block;
+			width: 100%;
+			height: var(--img-height);
+			object-fit: cover;
+			border-top-left-radius: 1rem;
+			border-top-right-radius: 1rem;
+		}
+		
+		.card h4{
+			margin: 0;
+			font-size: 1.5rem;
+			font-weight:bold;
+			padding:.8rem 1.2rem;
+			background-color: #FFF;
+			line-height: 2rem;
+			letter-spacing: -.5px;
+			padding-bottom: 0;
+		}
+		.card .content-wrapper{
+			height:0;
+			overflow: hidden;
+		}
+		.card .content-wrapper .content{
+			padding: 0 1.2rem;
+			background-color: #FFF;
+			overflow: auto;
+		}
+		.card p{
+			font-size:1.2rem;
+			line-height: 1.5rem;
+		}
+	</style>
+	<body>
+		<div class="card">
+			<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1598205558112&di=558e92a590fd595e363518c47dc62e39&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fphotoblog%2F1405%2F27%2Fc2%2F34667424_34667424_1401163299500_mthumb.jpg" />
+			<h4>App of The Day</h4>
+			<div class="content-wrapper">
+				<div class="content">
+					<p>sdafdsfdsfdsfnmdsnfm,dfmdfn,mzasd,fm,mdasfndfm,dnf,nmasdm,</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
